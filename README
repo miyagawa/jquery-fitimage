@@ -11,7 +11,7 @@ Usage:
   <script src="jquery.fitimage.js"></script>
   <script>
   $(document).ready(function(){
-    $('.fit').fitimage();
+    $('.fit').fitimage({ placeholder: "/uri/to/placeholder.png" });
   });
   </script>
   ...
