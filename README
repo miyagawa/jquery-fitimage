@@ -1,0 +1,27 @@
+jquery.fitimage - jQuery plugin to fit images
+
+You're loading images with unknown width and height, but don't want to
+stretch the images with wrong aspect ratio. This plugin swaps the
+images with a placeholder to load, preloads the actual image in the
+background, calculate the size and assign proper margins to fit the
+image with given width and height.
+
+Usage:
+
+  <script src="jquery.fitimage.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('.fit').fitimage();
+  });
+  </script>
+  ...
+  <div class="container">
+    <img src="http://example.com/test.jpg" class="fit" style="width:200px;height:200px" />
+  </div>
+
+For example, if test.jpg's size is 800x600, fitimage() will update the
+CSS property of the given img element:
+
+  width:200px;height:150px;margin-top:25px;margin-height:25px;
+
+See sample.html for more.
