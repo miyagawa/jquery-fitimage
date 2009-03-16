@@ -22,6 +22,6 @@ Usage:
 For example, if test.jpg's size is 800x600, fitimage() will update the
 CSS property of the given img element:
 
-  width:200px;height:150px;margin-top:25px;margin-height:25px;
+  width:200px;height:150px;margin-top:25px;margin-bottom:25px;
 
 See sample.html for more.
