@@ -7,7 +7,13 @@
     
     this.each(function(){
       var $el = $(this);
-
+      
+      // reset when replace the img@src
+      $el.css({
+        "margin-top": 0,
+        "margin-left": 0
+      });
+      
       // Swap the img@src with the placeholder
       var src = $el.attr('src');
       $el.attr('src', options.placeholder || defaults.placeholder);
